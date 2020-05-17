@@ -1,0 +1,65 @@
+/* Resume header with person's name */
+.modal-header {
+    text-align: center;
+    background-color: #D9D9D9;
+    border-style: solid hidden;
+    border-width: 1px;
+    margin-bottom: 0;
+}
+/* p element with person's contact info */
+.modal-contact {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+}
+/* p element with person's job title */
+.modal-job-title {
+    text-align: center;
+    font-size: 24px;
+    color: #366091;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/* Heading for skills, work, and education sections */
+.modal-sub-heading {
+    text-align: center;
+    color: #708DAF;
+    background-color: #F2F2F2;
+    border-style: hidden hidden solid hidden;
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 0;
+}
+/* Skills, education, and certifications text */
+.modal-skills, .school-list, .cert-list {
+    text-align: center;
+}
+/* Container for each job heading for each job */
+.modal-sub-sub-heading {
+    background-color: #F2F2F2;
+    text-align: center;
+    margin-top: 0;
+}
+/* Job name text */
+.job-heading {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* Job position and job start to end date text (span elements)*/
+.position-heading, .position-heading-alt {
+    font-style: italic;
+}
+/* p element containing the job position and job start to end date span elements */
+.position-length {
+    margin-top: 0;
+}
+/* Key Assignments, Education (preceding colon), and Certification (preceding colon) text */
+.duties-title, .school-info, .cert-info {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+/* Colons after Education and Certifications text */
+.school-colon, .cert-colon {
+    font-weight: bold;
+}

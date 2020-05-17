@@ -1,0 +1,86 @@
+/* Container for HTML code for homepage */
+.resume-builder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Homepage header container */
+.resume-builder-header {
+    margin-bottom: 2%;
+}
+/* Input & textarea field containers */
+.resume-builder-input-child {
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+/* Single input fields */
+.one-input {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+}
+/* Containers for Skills */
+.one-or-more-input {
+    display: grid;
+    grid-template-columns: 45% 47.5% 7.5%;
+}
+/* Skills input field */
+.person-skills {
+    margin-right: 5%;
+}
+/* Skills label for all skills containers except the 1st */
+.invisible {
+    visibility: hidden;
+}
+/* Container for Intro */
+.intro-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Intro label */
+.textarea-label{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+/* Intro textarea */
+.person-intro {
+    resize: none;
+    width: 100%;
+    padding-bottom: 20%;
+}
+/* Work, education, and certification p elements */
+.form-section {
+    padding-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+/* Add and remove buttons (not including + and - sign buttons for skills) */
+.add-work, .remove-work, .remove-school, .remove-cert,
+.add-school, .add-cert, .add-skill {
+    font-size: 13px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* Remove buttons (not including - sign buttons for skills) */
+.remove-work, .remove-school, .remove-cert {
+    margin-bottom: 5%;
+}
+/* Work duties label */
+.work-label {
+    margin-left: 20%;
+}
+/* Work duties textarea */
+.work-desc {
+    margin-top: 5%;
+    resize: none;
+    width: 100%;
+    padding-bottom: 20%;
+}
+/* Create resume and clear form buttons */
+.create-resume, .clear-form {
+    font-size: 13px;
+    margin-top: 10%;
+}
+

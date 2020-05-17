@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <title>Resume Builder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="modal.css" type="text/css" rel="stylesheet">
+    <link href="resume.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <div class="resume-builder">
+        <div class="resume-builder-header">
+          <h1>Resume Builder</h1>
+        </div>
+        <div class="resume-builder-input-parent">
+          <div class="resume-builder-input-child one-input">
+            <label for="person-name">Name</label>
+            <input type="text" class="person-name" name="person-name">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="person-address">Address</label>
+            <input type="text" class="person-address" name="person-address">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="person-email">Email</label>
+            <input type="text" class="person-email" name="person-email">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="person-number">Phone Number</label>
+            <input type="text" class="person-number" name="person-number">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="person-title">Job Title</label>
+            <input type="text" class="person-title" name="person-title">
+          </div>
+          <div class="resume-builder-input-child one-or-more-input">
+            <label for="person-skills">Skills</label>
+            <input type="text" class="person-skills" name="person-skills">
+            <button class="initial-add-skill">+</button>
+          </div>
+          <div class="resume-builder-input-child intro-textarea">
+              <label class="textarea-label" for="person-intro">Brief Introduction of Expertise</label>
+              <textarea class="person-intro" name="person-intro"></textarea>
+          </div>
+          <p class="form-section">Work Experience</p>
+          <div class="job-fields">
+            <div class="resume-builder-input-child one-input">
+              <label for="company">Company</label>
+              <input type="text" class="company" name="company">
+            </div>
+            <div class="resume-builder-input-child one-input">
+              <label for="position">Position</label>
+              <input type="text" class="position" name="position">
+            </div>
+            <div class="resume-builder-input-child one-input">
+              <label for="work-start">Start Date</label>
+              <input type="text" class="work-start" name="work-start">
+            </div>
+            <div class="resume-builder-input-child one-input">
+              <label for="work-end">End Date</label>
+              <input type="text" class="work-end" name="work-end">
+            </div>
+            <div class="resume-builder-input-child work-textarea">
+              <label class="work-label" for="work-desc">Duties & Accomplishments</label>
+              <textarea class="work-desc" name="work-desc"></textarea>
+            </div>
+          </div>
+          <button class="add-work">Add Job</button>
+          <p class="form-section">Education</p>
+          <div class="school-fields">
+            <div class="resume-builder-input-child one-input">
+              <label for="school">School</label>
+              <input type="text" class="school" name="school">
+            </div>
+            <div class="resume-builder-input-child one-input">
+              <label for="school-end">Graduation Year</label>
+              <input type="text" class="school-end" name="school-end">
+            </div>          
+            <div class="resume-builder-input-child one-input">
+              <label for="degree">Degree/Diploma</label>
+              <input type="text" class="degree" name="degree">
+            </div>
+          </div>
+          <button class="add-school">Add School</button>
+          <p class="form-section">Certifications</p>
+          <div class="cert-fields">
+            <div class="resume-builder-input-child one-input">
+              <label for="cert-name">Name</label>
+              <input type="text" class="cert-name" name="cert-name">
+            </div>
+            <div class="resume-builder-input-child one-input">
+              <label for="cert-year">Year Achieved</label>
+              <input type="text" class="cert-year" name="cert-year">
+            </div>
+          </div>
+          <button class="add-cert">Add Certificate</button>
+        </div>
+        <div class="resume-builder-btn">
+          <button class="create-resume">Create & View Resume</button>
+          <button class="clear-form">Clear Form</button>
+        </div>
+      </div>
+
+
+
+    <div class="modal" style="display: none">
+      <div class="overlay"></div>
+      <div class="modal_content">
+        <!-- Dynamic div -->
+        
+        <!-- End of Dynamic div -->
+      </div>
+    </div>
+
+
+
+
+    </div>
+    <script src="add-remove-skills.js"></script>
+    <script src="add-job.js"></script>
+    <script src="add-school.js"></script>
+    <script src="add-cert.js"></script>
+    <script src="clear-form.js"></script>
+    <script src="resume.js"></script>
+    <script src="clear-resume.js"></script>
+    <script src="modal.js"></script>
+    <script src="backend.js"></script>
+  </body>
+</html>

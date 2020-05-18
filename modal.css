@@ -15,7 +15,8 @@
     width: 100%;
     height: 100%;
     z-index: 995;
-    background: rgba(0,0,0,0.85);
+    background-color: #323639;
+    /*background: rgba(0,0,0,0.85);*/
 }
 /* Modal content (resume) */
 .modal_content {
@@ -31,6 +32,15 @@
     padding: 10px 30px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.7);
     border-radius: 4px;
+}
+
+.download-btn {
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    z-index: 999;
 }
 /* Media queries that change the width of the resume based on the screen width */
 @media (max-width:600px){

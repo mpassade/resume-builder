@@ -34,9 +34,11 @@ Fill in the fields:
   * Add Certificate Button: If you wish to have more than 1 certificate displayed on the resume, you can click the 'Add Certificate' button to create another set of cert fields. When there are more than 1 set, each will have a 'Remove Certificate' button under it that'll delete the set if clicked.
 
 * Create & View Resume Button: When clicked, the resume will be created and displayed. You can then click any black space around it to exit and return to the previous page. Any edits will immediately take effect once you make them and click the create resume button again.
+* Download Resume Button: When the preview of your resume appears (after clicking the create & view button) there will be a download icon at the top right-hand corner of the screen. If you click it, it will download your resume as a .doc document.
 * Clear Form Button: When clicked, all of the information entered into the fields on the form will be deleted. The skills section will go back to having 1 field. Likewise, the work, education, and certificate sections will go back to having 1 set of fields each. This button makes everything as it was when you first loaded the webpage. It is meant as a tool to start the process over if so desired, instead of having to go and delete the content within each field on the form.
+
 
 
 ## How to access
 
-You can access the Resume Builder website by going to https://mpassade-ci.github.io/final-project/.
+You can access the Resume Builder website by going to https://mpassade.github.io/resume-builder/.

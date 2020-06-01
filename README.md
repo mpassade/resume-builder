@@ -41,4 +41,4 @@ Fill in the fields:
 
 ## How to access
 
-You can access the Resume Builder website by going to https://mpassade.github.io/resume-builder/.
+You can access the Resume Builder website by going to https://myresumebuilder.org.

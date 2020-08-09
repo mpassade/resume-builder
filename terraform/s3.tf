@@ -1,15 +1,7 @@
 resource "aws_s3_bucket" "website" {
     bucket = var.bucket
-    acl = "private"
-    versioning {
-        enabled = true
-    }
-    server_side_encryption_configuration {
-        rule {
-            apply_server_side_encryption_by_default {
-                sse_algorithm = "AES256"
-            }
-        }
+    website {
+        index_document = "index.html"
     }
     tags = {
         Project = var.project
@@ -29,11 +21,14 @@ resource "aws_s3_bucket_object" "objects" {
     bucket = var.bucket
     key = each.value
     source = "../static-content/${each.value}"
-    server_side_encryption = "AES256"
-    acl = "private"
-    storage_class = "STANDARD"
+    content_type = lookup(var.mime_types, split(".", each.value)[1])
     etag = filemd5("../static-content/${each.value}")
     tags = {
         Project = var.project
     }
+}
+
+resource "aws_s3_bucket_policy" "policy" {
+    bucket = var.bucket
+    policy = data.aws_iam_policy_document.s3.json
 }

@@ -41,4 +41,4 @@ Fill in the fields:
 
 ## How to access
 
-You can access the Resume Builder website by going to https://myresumebuilder.org.
+You can access the Resume Builder website by going to https://build-a-resume.com.

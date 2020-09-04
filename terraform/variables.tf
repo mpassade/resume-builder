@@ -10,6 +10,10 @@ variable "domain" {
   type = string
   default = "build-a-resume.com"
 }
+variable "html" {
+  type = string
+  default = "index.html"
+}
 variable "mime_types" {
   type = map(string)
   default = {

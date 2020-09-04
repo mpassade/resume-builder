@@ -43,4 +43,5 @@
     width: 7%;
     min-width: 50px;
     z-index: 999;
+    outline: none;
 }

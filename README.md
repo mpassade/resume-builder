@@ -45,6 +45,6 @@ The Resume Builder website is hosted on Amazon Web Services (AWS) and can be acc
 
 When users go to build-a-resume.com, Route 53 uses an A or AAAA (for users on IPv6 networks) record to forward the traffic to a Cloudfront Distribution. Cloudfront uses all edge locations to ensure users globally have the best performance when accessing the website.
 
-Cloudfront also uses an SSL certificate created in ACM so that it can use HTTPS to secure communication to build-a-resume.com. Cloudfront then serves the request to an S3 bucket where the Resume Builder website is hosted.
+Cloudfront also uses an SSL certificate created in ACM so that it can use HTTPS to secure communication to build-a-resume.com. The Cloudfront Distribution's origin is the S3 bucket where the Resume Builder website is hosted.
 
 Resume Builder contains no application code and is therefore static and can be hosted via S3 which can serve the HTML, CSS, JavaScript, and image files on its own. The bucket is restricted by an origin access identity, meaning its content can only be accessed through the Cloudfront Distribution that it's associated with.
